@@ -1,0 +1,96 @@
+//index.html
+.hello {
+    @include respond-to (laptop) {
+        width: 355px;
+        min-height: 215px;
+        margin-top: -10px;
+    }
+}
+
+.hello__image {
+    @include respond-to (laptop) {
+        width: 105px;
+        height: 105px;
+        margin-top: -52px;
+    }
+}
+
+.hello__name {
+    @include respond-to (laptop) {
+        padding-top: 68px;
+    }
+}
+
+.hello__footer {
+    @include respond-to (laptop) {
+        margin-top: 16px;
+    }
+}
+
+
+//navigation
+.sidebar {
+  @include respond-to (laptop) {
+    margin-bottom: 16px;
+  }
+}
+
+.menu__item {
+  @include respond-to (laptop) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 24px;
+  }
+}
+
+.menu__link {
+  @include respond-to (laptop) {
+    text-align: left;
+    border: none;
+    padding-right: 0;
+  }
+}
+
+.about__left {
+  @include respond-to (laptop) {
+    width: 32%;
+  }
+}
+
+.about__right {
+  @include respond-to (laptop) {
+    width: 61%;
+    margin-left: 14px;
+  }
+}
+
+.about__image {
+  @include respond-to (laptop) {
+    height: 165px;
+    width: 165px;
+  }
+}
+
+.about__text {
+  @include respond-to (laptop) {
+    height: 370px;
+  }
+}
+
+.career__left {
+  @include respond-to (laptop) {
+    width: 30%;
+  }
+}
+
+.career__right {
+  @include respond-to (laptop) {
+    width: 70%;
+  }
+}
+
+.prof__desc {
+  @include respond-to (laptop) {
+    width: 358px;
+  }
+}

@@ -1,0 +1,126 @@
+$desktop-width: 1200px;
+$laptop-width: 992px;
+$tablets-width: 768px;
+$phones-width: 496px;
+
+@mixin respond-to($media) {
+  @if $media == desktop {
+	  @media screen and (min-width: $desktop-width) {@content;}
+  }
+  @else if $media == laptop {
+	   @media (min-width: #{$tablets-width + 1px}) and (max-width: #{$laptop-width}) {@content;}
+  }
+  @else if $media == tablets {
+	  @media (min-width: #{$phones-width + 1px}) and (max-width: #{$tablets-width}) {@content;}
+  }
+  @else if $media == phones {
+	  @media screen and (max-width: #{$phones-width}) {@content;}
+  }
+}
+
+//conteiner settings
+.container {
+  @include respond-to (desktop) {
+		width: 940px;
+	}
+	@include respond-to (laptop) {
+		width: 750px;
+	}
+	@include respond-to (tablets) {
+		width: 480px;
+	}
+	@include respond-to (phones) {
+		width:95%;
+		// padding: 0;
+		margin: 0 auto;
+	}
+}
+
+//header
+.page-header {
+  @include respond-to (laptop) {
+    margin-bottom: 18px;
+  }
+  @include respond-to (tablets) {
+    margin-bottom: 18px;
+  }
+  @include respond-to (phones) {
+    margin-bottom: 8px;
+  }
+}
+
+.header__left,{
+	@include respond-to (tablets) { width: 75%; }
+	@include respond-to (phones) { width:75%; }
+}
+
+.header__right{
+	@include respond-to (tablets) {
+    width: 25%;
+    padding-top: 20px;
+   }
+	@include respond-to (phones) {
+    width:25%;
+    padding-top: 20px;
+  }
+}
+
+.contacts {
+  @include respond-to (tablets) {
+    background: url('../img/icons/phone.png') center center no-repeat;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    vertical-align: top;
+
+    &:hover {
+      background-image: url('../img/icons/phone-hover.png');
+    }
+  }
+  @include respond-to (phones) {
+    background: url('../img/icons/phone.png') center center no-repeat;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    vertical-align: top;
+
+
+    &:hover {
+      background-image: url('../img/icons/phone-hover.png');
+    }
+  }
+}
+
+.dropdown *{
+    @include respond-to (tablets) {
+        font-size: 18px;
+    }
+    @include respond-to (phones) {
+        font-size: 18px;
+    }
+}
+
+//content
+.sidebar,
+.page-content {
+  @include respond-to (laptop) {
+    float: none;
+    width: 100%;
+  }
+	@include respond-to (tablets) {
+    float: none;
+    width: 100%;
+  }
+	@include respond-to (phones) {
+    float: none;
+    width: 100%;
+  }
+}
+
+//footer
+.footer__left,
+.footer__right{
+	@include respond-to (phones) {
+    width:100%;
+  }
+}

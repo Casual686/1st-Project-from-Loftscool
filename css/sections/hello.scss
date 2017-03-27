@@ -1,0 +1,113 @@
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+	background-image: url(../img/bg/bg.png);
+	text-align: center;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		width: 0;
+		vertical-align: middle;
+	}
+}
+
+.hello {
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	width: 300px;
+	min-height: 232px;
+	display: inline-block;
+	vertical-align: middle;
+	background: $white;
+	animation: bumping 1s ease-in;
+	margin-left: -4px;
+}
+
+.hello__image {
+	position: absolute;
+	margin-top: -71px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 2px solid #bebebe;
+	border-radius: 50%;
+	box-sizing: border-box;
+	overflow: hidden;
+	height: 142px;
+	width: 142px;
+}
+
+
+.hello__picture {
+	width: 100%
+}
+
+.hello__name {
+	font-family: 'open_sans';
+	font-weight: 500;
+	font-size: 21px;
+	text-align: center;
+	padding-top: 85px;
+
+	& p {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+
+.hello__footer {
+	position: relative;
+	margin-top: 14px;
+	height: 77px;
+	background: $blue;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+}
+
+.hello__button {
+	@include buttons;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-color: $white;
+	color: $white;
+	font-family: 'fira';
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.hello__button:hover {
+	background: $white;
+	color: $blue;
+}
+
+@keyframes bumping {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  20% {
+      opacity: 1;
+      transform: scale(1.1);
+  }
+  40% {
+      transform: scale(0.9);
+  }
+  60% {
+      transform: scale(1.03);
+  }
+  80% {
+      transform: scale(0.97);
+  }
+  100% {
+      transform: scale(1) ;
+  }
+}

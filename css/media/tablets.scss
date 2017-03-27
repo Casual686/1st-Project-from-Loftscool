@@ -1,0 +1,229 @@
+//main.html
+.hello {
+    @include respond-to (tablets) {
+        width: 355px;
+        min-height: 215px;
+        margin-top: -10px;
+    }
+}
+
+.hello__image {
+    @include respond-to (tablets) {
+        width: 105px;
+        height: 105px;
+        margin-top: -52px;
+    }
+}
+
+.hello__name {
+    @include respond-to (tablets) {
+        padding-top: 68px;
+    }
+}
+
+.hello__footer {
+    @include respond-to (tablets) {
+        margin-top: 16px;
+    }
+}
+
+//dropdown
+.dropdown {
+    @include respond-to (tablets) {
+        padding: 5px 10px;
+        transform: translateX(-84%);
+
+        & * {
+            font-size: 14px;
+        }
+    }
+}
+
+.dropdown__item {
+    @include respond-to (tablets) {
+        margin-bottom: 10px;
+    }
+}
+
+.dropdown__icon {
+    @include respond-to (tablets) {
+        margin-right: 5px;
+    }
+}
+
+.triangle {
+    @include respond-to (tablets) {
+        left: 84%;
+    }
+}
+
+//navigation
+.sidebar {
+  @include respond-to (tablets) {
+    margin-bottom: 29px;
+  }
+}
+
+.menu__item {
+  @include respond-to (tablets) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 24px;
+  }
+}
+
+.menu__list:last-child {
+  @include respond-to (tablets) {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  @include respond-to (tablets) {
+    text-align: left;
+    border: none;
+    padding-right: 0;
+  }
+}
+
+.title {
+  @include respond-to (tablets) {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.about__left,
+.about__right {
+  @include respond-to (tablets) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.about__image {
+  @include respond-to (tablets) {
+    height: 165px;
+    width: 165px;
+  }
+}
+
+.about__text {
+  @include respond-to (tablets) {
+    height: 370px;
+    margin: -8px auto 29px;
+  }
+}
+
+.about__btns {
+  @include respond-to (tablets) {
+    text-align: center;
+    margin-bottom: 86px;
+  }
+}
+
+.career__left,
+.career__right {
+  @include respond-to (tablets) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.career__left {
+  @include respond-to (tablets) {
+    width: 47.9166667%;
+    margin: 0 auto 12px;
+  }
+}
+
+.career__image {
+  @include respond-to (tablets) {
+    display: inline-block;
+  }
+}
+
+.career__picture {
+  @include respond-to (tablets) {
+    height: 226px;
+    width: 100%;
+  }
+}
+
+.prof__item {
+  @include respond-to (tablets) {
+    padding: 0 20px;
+    display: block;
+  }
+}
+
+.prof__desc {
+  @include respond-to (tablets) {
+    &::after,
+    &::before {
+      display: none;
+    }
+    width: 100%;
+
+    & h2 {
+      font-size: 18px;
+    }
+    & p {
+      font-size: 16px;
+    }
+  }
+}
+
+.prof__year {
+  @include respond-to (tablets) {
+    display: none;
+  }
+}
+
+.project__list {
+  @include respond-to (tablets) {
+    margin-left: 0;
+  }
+}
+
+.project__item {
+  @include respond-to (tablets) {
+    width: 230px;
+    margin: 0 17px 26px 0;
+  }
+}
+
+.project__item:nth-child(2n+0) {
+  @include respond-to (tablets) {
+    margin-right: 0;
+  }
+}
+
+.project__picture {
+  @include respond-to (tablets) {
+    width: 100%;
+    max-height: none;
+  }
+}
+
+.wraper::after {
+  @include respond-to (tablets) {
+    height: 95px;
+  }
+}
+
+.page-footer {
+  @include respond-to (tablets) {
+    height: 95px;
+    margin-top: -95px;
+  }
+}
+
+.footer__left,
+.footer__right{
+	@include respond-to (tablets) {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}

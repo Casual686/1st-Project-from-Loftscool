@@ -1,0 +1,46 @@
+.footer__left,
+.footer__right {
+	float: left;
+	width: 50%;
+}
+
+.footer__left {
+  	padding-top: 18px;
+}
+
+.copyright {
+	font-size: 14px;
+	font-weight: 300;
+	color: $gray;
+}
+
+.footer__right {
+	text-align: right;
+  padding-top: 10px;
+}
+
+
+.socials__item {
+	margin-left: 2px;
+	display: inline-block;
+}
+
+.social__link {
+	width: 31px;
+	height: 31px;
+	display: block;
+	background-color: $gray;
+	border-radius: 50%;
+	text-decoration: none;
+	color: $darkgray;
+	text-align: center;
+	line-height: 31px;
+
+	&.fa-github:hover  {
+		background-color: rgb(21, 27, 27);
+	}
+	&.fa-vk:hover  {
+		background-color: #5d99c3;
+	}
+
+}

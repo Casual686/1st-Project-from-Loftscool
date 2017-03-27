@@ -1,0 +1,230 @@
+//main.html
+.hello {
+    @include respond-to (phones) {
+        min-height: 215px;
+        margin-top: -100px;
+    }
+}
+
+.hello__image {
+    @include respond-to (phones) {
+        width: 105px;
+        height: 105px;
+        margin-top: -32px;
+    }
+}
+
+//dropdown
+.dropdown {
+    @include respond-to (phones) {
+        padding: 5px 10px;
+        transform: translateX(-84%);
+
+        & * {
+            font-size: 14px;
+        }
+    }
+}
+
+.dropdown__item {
+    @include respond-to (phones) {
+        margin-bottom: 10px;
+    }
+}
+
+.dropdown__icon {
+    @include respond-to (phones) {
+        margin-right: 5px;
+    }
+}
+
+.triangle {
+    @include respond-to (phones) {
+        left: 84%;
+    }
+}
+
+//navigation
+.user__name {
+  @include respond-to (phones) {
+    max-width: 120px;
+    font-size: 14px;
+    margin-left: 14px;
+  }
+}
+
+.sidebar {
+  @include respond-to (phones) {
+    margin-bottom: 5px;
+  }
+}
+
+.menu__item {
+  @include respond-to (phones) {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-right: 13px;
+  }
+}
+
+.menu__link {
+  @include respond-to (phones) {
+    text-align: left;
+    border: none;
+    padding-right: 0;
+  }
+}
+
+.menu__icon {
+  @include respond-to (phones) {
+    display: none;
+  }
+}
+
+.menu__text {
+  @include respond-to (phones) {
+    margin-left: 0;
+  }
+}
+
+.title {
+  @include respond-to (phones) {
+    text-align: center;
+    margin-bottom: 6px;
+  }
+}
+
+.about__left,
+.about__right {
+  @include respond-to (phones) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.about__image {
+  @include respond-to (phones) {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+ .about__text {
+  @include respond-to (phones) {
+     height: 420px;
+     margin: 0 0 24px;
+  }
+}
+
+.about__btns {
+  @include respond-to (phones) {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+}
+
+.career__left,
+.career__right {
+  @include respond-to (phones) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.career__left {
+  @include respond-to (phones) {
+    width: 220px;
+    margin: 0 auto 10px;
+  }
+}
+
+.career__image {
+  @include respond-to (phones) {
+    display: inline-block;
+  }
+}
+
+.project__list {
+  @include respond-to (phones) {
+    margin-left: 0;
+  }
+}
+
+.project__item {
+  @include respond-to (phones) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.prof__item {
+  @include respond-to (phones) {
+    padding: 0;
+    display: block;
+  }
+}
+
+.prof__desc {
+  @include respond-to (phones) {
+    &::after,
+    &::before {
+      display: none;
+    }
+    width: 100%;
+
+    & h2 {
+      font-size: 18px;
+    }
+    & p {
+      font-size: 16px;
+    }
+  }
+}
+
+.prof__year {
+  @include respond-to (phones) {
+    display: none;
+  }
+}
+
+.project__picture {
+  @include respond-to (phones) {
+    width: 100%;
+    max-height: none;
+  }
+}
+
+.wraper::after {
+  @include respond-to (phones) {
+    height: 115px;
+  }
+}
+
+.page-footer {
+  @include respond-to (phones) {
+    height: 115px;
+    margin-top: -115px;
+  }
+}
+
+.footer__left,
+.footer__right{
+	@include respond-to (phones) {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer__left {
+	@include respond-to (phones) {
+    padding-top: 15px;
+  }
+}
+
+.footer__right {
+	@include respond-to (phones) {
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+//layout vars
+$header-height: 80px;
+$container-width: 940px;
+$footer-height: 50px;
+
+
+//colors
+$white: #ffffff;
+$lightgray: #f6f6f6;
+$gray: #727272;
+$darkgray: #414141;
+$blue: #33c1e3;
+$red: #e85f61;
+
+//layout
+@import "layout/normalize";
+@import "layout/adjustment";
+@import "layout/fonts";
+@import "layout/font-awesome";
+
+//sections
+@import "sections/content.scss";
+@import "sections/hello";
+@import "sections/page-header";
+@import "sections/menu.scss";
+@import "sections/page-footer";
+@import "sections/about";
+@import "sections/career";
+@import "sections/portfolio";
+
+//media
+@import "media/media-settings";
+@import "media/desktop";
+@import "media/laptop";
+@import "media/tablets";
+@import "media/phones";

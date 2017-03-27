@@ -1,0 +1,38 @@
+.container {
+	@extend %clearfix;
+	width: $container-width;
+	margin: 0 auto;
+}
+
+.sidebar {
+	float: left;
+	width: 220px;
+}
+
+.page-content {
+  float: right;
+  width: 700px;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 35px;
+	color: $darkgray;
+	margin-bottom: 19px;
+}
+
+@mixin buttons {
+	display: inline-block;
+	padding: 7px 13px;
+	border: 2px solid $red;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 600;
+	color: $red;
+	text-decoration: none;
+}
+
+.button__icon, .button__title {
+  display: inline-block;
+  vertical-align: middle;
+}
